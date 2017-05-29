@@ -1,0 +1,32 @@
+/* 
+	Agência WEBi - http://www.webi.com.br
+	Cliente: Nome do cliente
+*/
+
+/* font-family: 'Libre Baskerville', serif; */
+@import url('http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700');
+
+/* geral */
+html 									{ width: 100%; height: 100%; }
+body 									{ width: 100%; height: auto; font-size: 12px; font-family: 'Ubuntu', sans-serif; background: #fff; color: #241f2a; }
+.container 								{ width: 980px; height: auto; margin: 0 auto; }
+
+/* contato */
+#sucesso_formulario 					{ background: #DFF0D8; color: #468847; border: 1px solid #468847; padding: 10px; margin-bottom: 10px; }
+#erro_formulario 						{ background: #FDF7F7; color: #D9534F; border: 1px solid #D9534F; padding: 10px; margin-bottom: 10px; }
+
+/* pagination */
+.pagination 							{ display: block; width: 100%; clear: both; }
+.pagination strong 						{ padding: 0 10px; height: 30px; background: #000; color: #fff; display: block; float: left; margin-right: 3px; line-height: 30px; }
+.pagination a 							{ padding: 0 10px; height: 30px; background: #ED3237; color: #fff; display: block; float: left; margin-right: 3px; line-height: 30px; text-decoration: none; }
+.pagination a:hover 					{ background: #FFEF00; color: #ED3237; }
+
+/* noticias */
+.voltar 								{ background: #241F2A; color: #fff; height: 30px; border-radius: 5px; padding: 0 15px; display: block; text-decoration: none; float: right; line-height: 30px; }
+.voltar:hover 							{ background: #EF3202; }
+
+/* conteudo */
+.galeria_conteudo 						{ width: 100%; height: auto; }
+.galeria_conteudo li 					{ list-style: none; float: left; margin: 0 20px 20px 0; }
+.galeria_conteudo li:nth-child(4n) 		{ margin-right: 0; }
+.galeria_conteudo li img 				{ width: 145px; height: 108px; display: block; } 

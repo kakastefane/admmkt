@@ -1,0 +1,8 @@
+- Erros:
+
+
+Ideias (Itens adicionais):
+- 
+
+Feito
+- Ao editar a noticia, ele não está mantendo o mesmo link (No teste ele adicionou um -1 na url da noticia)

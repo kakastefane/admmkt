@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+<IfModule mod_env.c>
+SetEnv HTTP_MOD_REWRITE On
+</IfModule>
+
+RewriteEngine on
+#exemplo de link para chamar uma foto : imagens/tabela/ID/nome_criado_no_admin/titulo-amigavel.jpg
+RewriteRule ^imagens/([A-Z_a-z0-9-]+)/([0-9]+)/([a-zA-Z_-]+)/([A-Za-z0-9-]+).jpg?$ uploads/$1/$2/$3.jpg  [T=image/jpeg,L]
+
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.*$ - [NC,L]
+RewriteRule (^.*)$ %{ENV:REWRITEBASE}index.php/$1 [NC,L]
+</IfModule>

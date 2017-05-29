@@ -399,21 +399,21 @@ function enviar_email($destinatarios,$assunto,$corpo,$responder=null){
 	$CI =& get_instance();
 	 
 	$config = array(
-		'protocol' => 'smtp',
-		'smtp_host' => 'ssl://smtp.gmail.com',
-		'smtp_port' => 465,
-		'smtp_user' => 'testesmtp@webi.com.br',
-		'smtp_pass' => 'smtp3241',
-		'mailtype'	=> 'html'
-	);
+	  'protocol' => 'smtp',
+	  'smtp_host' => 'kzcoorp.com',
+	  'smtp_port' => 587,
+	  'smtp_user' => 'contato@kzcoorp.com',
+	  'smtp_pass' => 'kzcoorp4166',
+	  'mailtype' => 'html'
+	 );
 	 
 	$CI->load->library('email', $config);
 	$CI->email->set_newline("\r\n");
 	 
-	$CI->email->from('testesmtp@webi.com.br', 'Agencia WEBI');
+	$CI->email->from('contato@kzcoorp.com', 'kz coorp - Contato pelo Site');
 	$CI->email->subject($assunto);
 	$CI->email->message($corpo);
-	$CI->email->bcc('formulario@webi.com.br'); 
+	$CI->email->bcc('jrkzuya@gmail.com'); 
 
 	if($responder){
 		$CI->email->reply_to($responder);
